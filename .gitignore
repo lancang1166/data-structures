@@ -1,0 +1,26 @@
+# Visual Studio
+
+.vs/
+
+# Build output
+
+**/x64/
+**/bin/
+**/Debug/
+**/Release/
+
+# MSVC intermediate files
+
+*.obj
+*.pdb
+*.ilk
+*.idb
+*.tlog
+*.log
+*.recipe
+*.lastbuildstate
+
+# Visual Studio user-specific settings
+
+*.vcxproj.user
+*.suo
