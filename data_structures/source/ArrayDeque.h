@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 #include "Array.h"
 #include <cassert>
 
@@ -26,7 +26,7 @@ public:
 		return y;
 	}
 
-	//µ÷ÊÔÎò³öµÄµÀÀí£¬Ñ­»·Êý×éÏÂ±êÓÃ¼Ó·¨²»ÓÃ¼õ·¨£¬¼õ·¨ÓÐ¿ÉÄÜ±ä³É¸ºÊý£¬µ«ÊÇ¼Ó·¨²»»á
+	//è°ƒè¯•æ‚Ÿå‡ºçš„é“ç†ï¼Œå¾ªçŽ¯æ•°ç»„ä¸‹æ ‡ç”¨åŠ æ³•ä¸ç”¨å‡æ³•ï¼Œå‡æ³•æœ‰å¯èƒ½å˜æˆè´Ÿæ•°ï¼Œä½†æ˜¯åŠ æ³•ä¸ä¼š
 	void add(int index, T x) {
 		assert(index >= 0 && index <= size);
 		if (size + 1 > capacity)(resize());

@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 #include <iostream>
 #include <cassert>
 
@@ -10,7 +10,7 @@ private:
 
 public:
 	Array(int m_length):length(m_length){
-		point = new T[length]();//ÕâÀïµÄ"()"¾ÍÊÇ½«Öµ³õÊ¼»¯ÁË
+		point = new T[length]();//è¿™é‡Œçš„"()"å°±æ˜¯å°†å€¼åˆå§‹åŒ–äº†
 	}
 
 	~Array(){

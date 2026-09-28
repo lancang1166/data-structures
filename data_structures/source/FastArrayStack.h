@@ -1,10 +1,10 @@
-#pragma once
+ï»¿#pragma once
 #include "Array.h"
 #include <cassert>
 #include <algorithm>
 
 template<typename T>
-class FastArrayStack {//Õâ¸öÀàÖ»ÊÇ°Ñresize(),add()ºÍremove()º¯ÊıÖĞµÄÒÆ¶¯»»³ÉÁËstd::copy¶øÒÑ
+class FastArrayStack {//è¿™ä¸ªç±»åªæ˜¯æŠŠresize(),add()å’Œremove()å‡½æ•°ä¸­çš„ç§»åŠ¨æ¢æˆäº†std::copyè€Œå·²
 private:
 	Array<T> a;
 	int capacity;
@@ -28,7 +28,7 @@ public:
 	}
 
 	void add(int index, T x) {
-		assert(index >= 0 && index <= size);//Ç°Ìá±ØĞëÊÇ 0 <= index <= size
+		assert(index >= 0 && index <= size);//å‰æå¿…é¡»æ˜¯ 0 <= index <= size
 		if (size + 1 > capacity) { resize(); }
 		std::copy_backward(a.begin() + index, a.begin() + size, a.begin() + size + 1);
 		a[index] = x;
@@ -36,7 +36,7 @@ public:
 	}
 
 	T remove(int index) {
-		assert(index >= 0 && index < size);//Ç°Ìá±ØĞëÊÇ 0 <= index <= size
+		assert(index >= 0 && index < size);//å‰æå¿…é¡»æ˜¯ 0 <= index <= size
 		T y = a[index];
 
 		std::copy(a.begin() + index + 1, a.begin() + size - 1, a.begin() + index);
@@ -56,7 +56,7 @@ private:
 	void resize() {
 		Array<T> b(std::max(2 * size, 1));
 		std::copy(a.begin() + 0, a.begin() + size, b.begin() + 0);
-		a = b;//ÕâÀïµÄµÈºÅµÄÒâË¼ÊÇ°ÑbµÄËùÓĞÈ¨¸øa
+		a = b;//è¿™é‡Œçš„ç­‰å·çš„æ„æ€æ˜¯æŠŠbçš„æ‰€æœ‰æƒç»™a
 		capacity = a.getLength();
 	}
 };

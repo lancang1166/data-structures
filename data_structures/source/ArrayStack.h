@@ -12,7 +12,7 @@ private:
 	int size = 0;
 
 public:
-	ArrayStack(int m_capacity):a(m_capacity), capacity(m_capacity) {}
+	ArrayStack(int m_capacity = 0):a(m_capacity), capacity(m_capacity) {}
 
 	int getSize() { return size; }
 
@@ -49,6 +49,18 @@ public:
 		if (3 * size < capacity) { resize(); }
 
 		return y;
+	}
+
+	ArrayStack<T>& operator=(ArrayStack<T>& other) {
+		if (this == &other) {
+			return *this;
+		}
+
+		a = other.a;
+		capacity = other.capacity;
+		size = other.size;
+
+		return *this;
 	}
 
 	void print(bool haveSize = false) {
