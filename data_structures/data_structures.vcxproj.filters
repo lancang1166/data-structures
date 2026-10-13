@@ -38,5 +38,11 @@
     <ClInclude Include="source\DualArrayDeque.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="source\RootishArrayStack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\RandomQueue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

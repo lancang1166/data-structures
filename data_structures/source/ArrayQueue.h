@@ -1,10 +1,10 @@
-﻿#pragma once
+#pragma once
 #include "Array.h"
 #include <cassert>
 
 template<typename T>
 class ArrayQueue {
-private:
+protected:
 	Array<T> a;
 	int size = 0;
 	int capacity;

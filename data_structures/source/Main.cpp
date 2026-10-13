@@ -1,10 +1,10 @@
-﻿#include<iostream>
-#include"DualArrayDeque.h"
+#include<iostream>
+#include"RandomQueue.h"
 
 #include <Windows.h>
 
 int main(){
-	DualArrayDeque<int>a;
+	RandomQueue<int>a;
 	a.add(0,1);
 	a.print();
 	a.add(0,2);

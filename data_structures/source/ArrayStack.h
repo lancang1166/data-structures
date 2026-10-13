@@ -29,7 +29,7 @@ public:
 	}
 
 	void add(int index, T x) {
-		assert(index >= 0 && index <= size);//Ç°Ìá±ØĞëÊÇ 0 <= index <= size
+		assert(index >= 0 && index <= size);//å‰æå¿…é¡»æ˜¯ 0 <= index <= size
 		if (size + 1 > capacity) { resize(); }
 		for (int i = size; i > index; i--) {
 			a[i] = a[i - 1];
@@ -39,7 +39,7 @@ public:
 	}
 
 	T remove(int index) {
-		assert(index >= 0 && index < size);//Ç°Ìá±ØĞëÊÇ 0 <= index <= size
+		assert(index >= 0 && index < size);//å‰æå¿…é¡»æ˜¯ 0 <= index <= size
 		T y = a[index];
 
 		for (int i = index; i < size - 1; i++) {
@@ -75,7 +75,7 @@ private:
 		for (int i = 0; i < size; i++) {
 			b[i] = a[i];
 		}
-		a = b;//ÕâÀïµÄµÈºÅµÄÒâË¼ÊÇ°ÑbµÄËùÓĞÈ¨¸øa
+		a = b;//è¿™é‡Œçš„ç­‰å·çš„æ„æ€æ˜¯æŠŠbçš„æ‰€æœ‰æƒç»™a
 		capacity = a.getLength();
 	}
 };
