@@ -44,5 +44,14 @@
     <ClInclude Include="source\RandomQueue.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="source\SLList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\DLList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\SEList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

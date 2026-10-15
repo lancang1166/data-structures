@@ -1,10 +1,10 @@
 #include<iostream>
-#include"RandomQueue.h"
+#include"SLList.h"
 
 #include <Windows.h>
 
 int main(){
-	RandomQueue<int>a;
+	SLList<int>a;
 	a.add(0,1);
 	a.print();
 	a.add(0,2);

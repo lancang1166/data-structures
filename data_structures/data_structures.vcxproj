@@ -146,10 +146,13 @@
     <ClInclude Include="source\ArrayDeque.h" />
     <ClInclude Include="source\ArrayQueue.h" />
     <ClInclude Include="source\ArrayStack.h" />
+    <ClInclude Include="source\DLList.h" />
     <ClInclude Include="source\DualArrayDeque.h" />
     <ClInclude Include="source\FastArrayStack.h" />
     <ClInclude Include="source\RandomQueue.h" />
     <ClInclude Include="source\RootishArrayStack.h" />
+    <ClInclude Include="source\SEList.h" />
+    <ClInclude Include="source\SLList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
