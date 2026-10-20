@@ -63,7 +63,7 @@ public:
 		return y;
 	}
 
-	Node* addBeforce(Node* target, T x) {
+	Node* addBefore(Node* target, T x) {
 		Node* temp = target->previous;
 
 		Node* theAddNode = new Node;

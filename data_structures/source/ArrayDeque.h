@@ -1,11 +1,11 @@
-﻿#pragma once
+#pragma once
 #include "Array.h"
 #include <cassert>
 
 
 template<typename T>
 class ArrayDeque {
-private:
+protected:
 	Array<T> a;
 	int size = 0;
 	int capacity;
@@ -71,7 +71,7 @@ public:
 	}
 
 private:
-	void resize() {
+	virtual void resize() {
 		Array<T> b((2 * size > 1 ? 2 * size : 1));
 		for (int i = 0; i < size; i++) {
 			b[i] = a[(head + i) % capacity];

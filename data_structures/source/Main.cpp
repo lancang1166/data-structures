@@ -1,10 +1,10 @@
 #include<iostream>
-#include"SLList.h"
+#include"SEList.h"
 
 #include <Windows.h>
 
 int main(){
-	SLList<int>a;
+	SEList<int>a(3);
 	a.add(0,1);
 	a.print();
 	a.add(0,2);

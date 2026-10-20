@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 #include <iostream>
 #include <cassert>
 
@@ -84,11 +84,11 @@ public:
 					std::cout << point[i] << "  ";
 				}
 				std::cout << " -> ";
-				for (int i = head; i < size + size; i++) {
+				for (int i = head; i < head + size; i++) {
 					std::cout << point[i] << "  ";
 				}
 				std::cout << "| ";
-				for (int i = size; i < length; i++) {
+				for (int i = head + size; i < length; i++) {
 					std::cout << point[i] << "  ";
 				}
 			}
