@@ -15,6 +15,8 @@ public:
 
 	int getSize() { return size; }
 
+	bool isEmpty() { return (size == 0); }
+
 	bool add(T x) {
 		if (size + 1 > capacity) { resize(); }
 		a[(head + size) % capacity] = x;
