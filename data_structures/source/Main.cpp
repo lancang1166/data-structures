@@ -1,41 +1,31 @@
-#include<iostream>
-#include"SEList.h"
+#include <iostream>
+#include <utility>
+#include <map>
 
-#include <Windows.h>
+#include "Treap.h"
 
 int main(){
-	SEList<int>a(3);
-	a.add(0,1);
-	a.print();
-	a.add(0,2);
-	a.print();
-	a.add(0,3);
-	a.print();
-	a.add(1,4);
-	a.print();
-	a.add(2,5);
-	a.print();
-	a.add(0,6);
-	a.print();
+	std::map<int, int> counts;
 
-	a.remove(0);
-	a.print();
-	a.remove(3);
-	a.print();
+	int cnt1 = 100000;
+	int cnt2 = 1000;
+	for (int i = 0; i < cnt1; i++) {
+		Treap<int> tree;
+		for (int i = 0; i < cnt2; i++) {
+			tree.add(i);
+		}
+		counts[tree.theWholeTreeHeight()]++;
+	}
 
-	a.add(4,7);
-	a.print();
-	a.add(4,8);
-	a.print();
-	a.add(0,9);
-	a.print();
+	for (const auto& [key, value] : counts) {
+		std::cout << key << ": " << value << '\n';
+	}
 
-	a.remove(6);
-	a.print();
-	a.remove(5);
-	a.print();
-	a.remove(1);
-	a.print();
+	/*tree.remove(8);
+
+	std::cout << "\nAfter removing 8:\n";
+	tree.print();*/
+	
 
 	std::cout<<"helloworld!"<<std::endl;
 }

@@ -53,5 +53,14 @@
     <ClInclude Include="source\SEList.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="source\BinaryTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BinarySearchTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Treap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
